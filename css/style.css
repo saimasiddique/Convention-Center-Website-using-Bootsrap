@@ -5,6 +5,9 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* .navigation{
+    height: 80px;
+} */
 .navbar-custom-icon{
     background-image: url(../icons/menu-2\ 1.svg);
     display: inline-block;
@@ -16,3 +19,65 @@ body {
     background-size: 100%;
 }
 
+
+/* Carousel -Banner */
+.carousel .carousel-item {
+    max-height:584px;
+}
+
+.carousel-item img {
+    object-fit:cover;
+    max-height:584px;
+}
+
+.dark-overlay::after{
+
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    opacity: 0.4;
+    z-index: 1;
+}
+
+.carousel-caption {
+    top: 60%;
+    transform: translateY(-50%);
+    /* transform: translateX(20%); */
+    /* bottom: initial; */
+    z-index: 2;
+    font-family: 'Poppins', sans-serif;
+  }
+  .carousel-caption h1{
+      font-size: 4.5vw;
+  }
+  .carousel-caption p, a{
+      font-size: 1.2vw;
+  }
+
+ 
+.carousel-button
+{
+
+background-image: linear-gradient(45deg, #AA771C,#d48f18);
+box-shadow: 3px 4px 0px 0px #976308; 
+
+}
+.carousel-button:hover
+{
+    background-image: linear-gradient(45deg, #af6f01,#e09006);
+    font-weight: 600;
+    box-shadow: 4px 5px 0px 0px #976308; 
+}
+.carousel-button:active
+{
+    background-image: linear-gradient(45deg, #af6f01,#e09006);
+    font-weight: 400;
+    box-shadow: 3px 3px 0px 0px #976308; 
+}
+
+  
