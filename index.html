@@ -21,10 +21,11 @@
 <body>
     <header class="navigation ">
         <!-- Navbar  -->
-        <nav class="navbar navbar-expand-lg navbar-light py-3 bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light  bg-light fixed-top">
             <div class="container">
                 <a class="navbar-brand " href="#">
-                    <h3 class="fw-bold text-wrap" style="color: #3E3E3E;">Walima'h Convention Center</h3>
+                    <h3 class="fs-1 text-wrap nav-font theme-color">Walima'h Convention Center
+                    </h3>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
@@ -33,10 +34,10 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav ms-auto">
-                        <a class="nav-link fw-bold" href="#">Home</a>
-                        <a class="nav-link fw-bold" href="#">About Us</a>
-                        <a class="nav-link fw-bold" href="#">Contact</a>
-                        <a class="nav-link fw-bold" href="#">Subscribe</a>
+                        <a class="nav-link fw-bold" href="#home">Home</a>
+                        <a class="nav-link fw-bold" href="#packages">About Us</a>
+                        <a class="nav-link fw-bold" href="#contact">Contact</a>
+                        <a class="nav-link fw-bold" href="#subscribeto">Subscribe</a>
                     </div>
                 </div>
             </div>
@@ -44,7 +45,7 @@
     </header>
 
     <main>
-        <section class="banner mb-5">
+        <section class="banner my-5" id="home">
             <!-- Banner section using carousel -->
             <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-indicators mb-0">
@@ -140,12 +141,12 @@
                 <div class="toast-body">
                     20% off on next booking
                 </div>
-                <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                <button type="button" class="btn-close me-2 m-2" data-bs-dismiss="toast" aria-label="Close"></button>
             </div>
         </div>
 
         <!-- Package-Cards  -->
-        <section class="container  pt-3 my-5" id="packages">
+        <section class="container  pt-2 my-5" id="packages">
             <h1 class="text-center my-md-5 py-md-4 theme-color">Our Packages</h1>
             <div class="row card-font-style">
                 <!-- 1st card  -->
@@ -389,7 +390,7 @@
         </section>
 
         <!-- FAQ  -->
-        <section id="faq">
+        <section class="pt-5" id="faq">
             <h1 class="text-center my-md-5  theme-color">Frequently Asked Questions</h1>
             <div class="container mb-5 font-inter">
                 <div class="row">
@@ -483,17 +484,113 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
 
+        <!-- Bonus Part  -->
+        <section class="about-you" id="subscribeto">
+            <h1 class="text-center my-md-3 py-md-4 theme-color fw-bold">Upcoming Event Booking</h1>
+            <div class="container font-manrope">
+                <div class="row">
+                    <div class=" col-lg-6 col-sm-12 d-flex align-items-center justify-content-center mb-sm-4 mb-md-0">
+                        <div>
+                            <img class=" img-fluid align-middle" src="images/stage2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 g-5 ">
+                        <h3 class="text-center mb-2 theme-color  ">Tell us about your event</h3>
 
+                        <form action="" class="was-validated">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label fw-bold">User Name</label>
+                                <input type="name" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Enter Your Full Name" required>
+                            </div>
 
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label fw-bold">Email address</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="name@example.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label fw-bold">Occupation</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Select an occupation</option>
+                                    <option value="1">Unemployed</option>
+                                    <option value="2">Government Job Holder</option>
+                                    <option value="3">Private Job Holder</option>
+                                    <option value="3">Other</option>
+                                </select>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-lg-6 col-sm-12 gx-5">
+                                    <label for="exampleFormControlInput1" class="form-label fw-bold">Event Start
+                                        Date</label>
+                                    <input type="date" id="eventstart" name="event">
+                                </div>
+                                <div class="col-lg-6 col-sm-12 mt-5 mt-lg-0 gx-5">
+                                    <label for="exampleFormControlInput1" class="form-label fw-bold">Event End
+                                        Date</label>
+                                    <input type="date" id="eventend" name="event">
+                                </div>
+                            </div>
+                            <div class="form-check mb-3">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label fw-light" for="exampleCheck1">Event end on the
+                                    same
+                                    date</label>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-md-6 col-sm-12">
+                                    <label for="exampleFormControlInput1" class="form-label fw-bold">Attendees</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Select an approximate number</option>
+                                        <option value="1">>100</option>
+                                        <option value="2">>200</option>
+                                        <option value="3">>300</option>
+                                        <option value="3">Other</option>
+                                    </select>
+                                </div>
+                                <div class="col-6 col-sm-12">
+                                    <label for="exampleFormControlInput1" class="form-label fw-bold">Room
+                                        Required</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Select an approximate number</option>
+                                        <option value="1">>10</option>
+                                        <option value="2">>20</option>
+                                        <option value="3">>30</option>
+                                        <option value="3">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="validationTextarea" class="form-label">Tell us more</label>
+                                <textarea class="form-control is-invalid" id="validationTextarea"
+                                    placeholder="Required example textarea"></textarea>
+                                <div class="invalid-feedback">
+                                    Please enter your message in the textarea.
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <button class="btn btn-outline-secondary px-5" type="submit">Submit</button>
+                            </div>
+                        </form>
+                        <div class="div-color py-2 px-4 rounded-2">
+                            <h5 class="text-center text-white fw-bold">We will soon contact with You... <br> Until then,
+                                Stay Safe.
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+        </section>
 
     </main>
 
 
-    <footer class="font-manrope bg-black mt-5 ">
+    <footer class="font-manrope bg-black mt-5 " id="contact">
         <div class=" container  py-5">
             <div class="row gx-5">
                 <div class="col-6 d-flex align-items-center justify-content-start pe-3">

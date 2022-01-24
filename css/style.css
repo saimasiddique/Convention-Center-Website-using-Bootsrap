@@ -1,6 +1,10 @@
 /* Google Font  */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;700&family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lobster&family=Manrope:wght@400;500;700&family=Roboto:wght@400;500;700;900&display=swap');
+
+.nav-font{
+    font-family: 'Lobster', cursive;
+}
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -138,4 +142,8 @@ margin-right: 12px;   */
 
 .footer-text-color{
 color: #D9DBE1;
+}
+
+.div-color{
+    background-image: linear-gradient( 178.2deg,  rgba(118,8,23,1) 10.9%, rgba(158,12,33,1) 62.6% );
 }
