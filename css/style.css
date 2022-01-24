@@ -98,7 +98,8 @@ box-shadow: 3px 4px 0px 0px #976308;
     background-image: url(../images/black-gold.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-  
+    /* margin-left: 12px;
+margin-right: 12px;   */
     
 }
 .theme-color{

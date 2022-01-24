@@ -126,6 +126,25 @@
             </div>
         </section>
 
+        <!-- Toast  -->
+        <div class="toast align-items-center border toast show ms-auto border border-warning border-5 border-top-0 border-bottom-0 border-end-0 theme-color fw-bold"
+            role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex ">
+                <div class="d-flex align-items-center px-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="text-success" width="22px" height="23px" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
+                    </svg>
+                </div>
+                <div class="toast-body">
+                    20% off on next booking
+                </div>
+                <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+
+        <!-- Package-Cards  -->
         <section class="container  my-5" id="packages">
             <h1 class="text-center my-md-5 py-md-4 theme-color">Our Packages</h1>
             <div class="row card-font-style">
@@ -246,62 +265,62 @@
                     </div>
                 </div>
                 <!-- 3rd card-special  -->
-                <div class="col-md-3 col-sm-6 gy-sm-4 back card-border  mt-0">
-                    <div class="card border-0 text-white">
-                        <div class="card-img-overlay">
-                            <div class="card-header bg-transparent border-0 fs-3 fw-bold">$800</div>
-                            <div class="card-body">
-                                <h5 class="card-title">Wedding Plus</h5>
-                                <p class="card-text">For most weddings with premium plans.
-                                </p>
-                                <p><span class="me-3"><svg xmlns="http://www.w3.org/2000/svg"
-                                            class="rounded-circle circle-bg text-white" width="20px" height="20px"
-                                            viewBox="0 0 20 20" fill="currentColor">
-                                            <path fill-rule="evenodd"
-                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                                clip-rule="evenodd" />
-                                        </svg></span>Full space access
-                                </p>
-                                <p><span class="me-3"><svg xmlns="http://www.w3.org/2000/svg"
-                                            class="text-white rounded-circle circle-bg" width="20px" height="20px"
-                                            viewBox="0 0 20 20" fill="currentColor">
-                                            <path fill-rule="evenodd"
-                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                                clip-rule="evenodd" />
-                                        </svg></span>Dedicated team
-                                </p>
-                                <p><span class="me-3"><svg xmlns="http://www.w3.org/2000/svg"
-                                            class="text-white rounded-circle circle-bg" width="20px" height="20px"
-                                            viewBox="0 0 20 20" fill="currentColor">
-                                            <path fill-rule="evenodd"
-                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                                clip-rule="evenodd" />
-                                        </svg></span>Buffet food
-                                </p>
-                                <p><span class="me-3"><svg xmlns="http://www.w3.org/2000/svg"
-                                            class="text-white rounded-circle circle-bg" width="20px" height="20px"
-                                            viewBox="0 0 20 20" fill="currentColor">
-                                            <path fill-rule="evenodd"
-                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                                clip-rule="evenodd" />
-                                        </svg></span>Premium decoration
-                                </p>
-                                <p><span class="me-3"><svg xmlns="http://www.w3.org/2000/svg"
-                                            class="text-white rounded-circle circle-bg" width="20px" height="20px"
-                                            viewBox="0 0 20 20" fill="currentColor">
-                                            <path fill-rule="evenodd"
-                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                                clip-rule="evenodd" />
-                                        </svg></span>Pay as plan
-                                </p>
+                <div class="col-md-3 col-sm-6 gy-sm-4 mt-5 mt-md-0 card-border back align-items-center">
+                    <div class="card border-0 text-white position-relative bg-transparent">
 
-                            </div>
-                            <div class="card-footer bg-transparent border-0"> <a
-                                    href="https://www.marriottindiaweddings.com/renaissance-mumbai-convention-centre-hotel"
-                                    class="btn btn-light rounded-pill px-5 py-2 fw-bold ">Custom
-                                    Plan</a>
-                            </div>
+                        <div class="card-header bg-transparent border-0 fs-3 fw-bold ">$800</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Wedding Plus</h5>
+                            <p class="card-text">For most weddings with premium plans.
+                            </p>
+                            <p><span class="me-3"><svg xmlns="http://www.w3.org/2000/svg"
+                                        class="rounded-circle circle-bg text-white" width="20px" height="20px"
+                                        viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd" />
+                                    </svg></span>Full space access
+                            </p>
+                            <p><span class="me-3"><svg xmlns="http://www.w3.org/2000/svg"
+                                        class="text-white rounded-circle circle-bg" width="20px" height="20px"
+                                        viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd" />
+                                    </svg></span>Dedicated team
+                            </p>
+                            <p><span class="me-3"><svg xmlns="http://www.w3.org/2000/svg"
+                                        class="text-white rounded-circle circle-bg" width="20px" height="20px"
+                                        viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd" />
+                                    </svg></span>Buffet food
+                            </p>
+                            <p><span class="me-3"><svg xmlns="http://www.w3.org/2000/svg"
+                                        class="text-white rounded-circle circle-bg" width="20px" height="20px"
+                                        viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd" />
+                                    </svg></span>Premium decoration
+                            </p>
+                            <p><span class="me-3"><svg xmlns="http://www.w3.org/2000/svg"
+                                        class="text-white rounded-circle circle-bg" width="20px" height="20px"
+                                        viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd" />
+                                    </svg></span>Pay as plan
+                            </p>
+
                         </div>
+                        <div class="card-footer bg-transparent border-0"> <a
+                                href="https://www.marriottindiaweddings.com/renaissance-mumbai-convention-centre-hotel"
+                                class="btn btn-light rounded-pill px-5 py-2 fw-bold ">Custom
+                                Plan</a>
+                        </div>
+
                         <span class="position-absolute translate-middle badge rounded-pill bg-danger card-badge">
                             Hot
                             <span class="visually-hidden">Exclusive Package</span>
@@ -368,6 +387,8 @@
                 </div>
             </div>
         </section>
+
+
 
     </main>
 
